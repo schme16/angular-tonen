@@ -1,0 +1,30 @@
+{
+  "name": "tonen",
+  "authors": [
+    "Shane Gadsby <schme16@gmail.com>"
+  ],
+  "description": "Angular binding for the tonen database service",
+  "main": "dist/tonen.min.js",
+  "moduleType": [],
+  "keywords": [
+    "angular",
+    "database",
+    "firebase",
+    "tonen",
+    "rest",
+    "restfull"
+  ],
+  "license": "MIT",
+  "homepage": "http://tonen.me",
+  "repository": "git@github.com:schme16/angular-tonen.git",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.4.8"
+  }
+}
