@@ -13,23 +13,24 @@
 	<link rel="canonical" href="https://tonen.me" />
 	<title>Tonen - Fast RESTful databases</title>
 	<script type="application/javascript" src="https://cdn.jsbundle.io/bundles/55c6d783257e02302b180e17/566a7091adc887c90ef98433.js"></script>
-	<script type="application/javascript" src="../dist/tonen.min.js"></script>
+	<script type="application/javascript" src="../dist/tonen-angular.min.js"></script>
+	<script type="application/javascript" src="../dist/tonen-jquery.min.js"></script>
 	<script>
 	
 	var m
 
 	angular.module('tonen test', ['tonen']).controller('test', function test ($scope, $tonen) {
 		m = $scope	
-		$tonen('https://tonen.me/v1/data/044665f0-9fce-11e5-852c-a567f23e7f13/data/data', $scope, 'test.test.aaaa')
-
-
+		$tonen('https://tonen.me/v1/data/044665f0-9fce-11e5-852c-a567f23e7f13/data', $scope, 'test1.test2.test3')
 	})
+
+	t = new $.tonen('https://localhost/v1/data/044665f0-9fce-11e5-852c-a567f23e7f13/data')
 
 	</script>
 </head>
 
 <body ng-app="tonen test" ng-controller="test">
-	{{test}}
+	{{test1.test2.test3}}
 
 </body>
 </html>
