@@ -2,11 +2,8 @@ angular.module("tonen", []).factory('$tonen', function tonen ($http) {
 
 	var $tonen = function (url, $scope, binder) {
 		$tonen.get(url).success(function (data) {
-			var skip = true, 
-				id = parseInt(new Date().getTime() + Math.random(), 0)
-				$scope['$$_____' + id] = data
-			$scope.$eval(binder + ' = $$_____' + id) 
-			delete $scope['$$_____' + id]
+			var skip = true 
+			$scope.$eval(binder + ' = $data', {'$data': data})
 			$scope.$applyAsync()
 			$scope.$watch(binder, function (n, o) {
 				if (!skip) {
