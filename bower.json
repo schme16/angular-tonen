@@ -1,10 +1,14 @@
 {
   "name": "tonen",
+  "version": "1.0.0",
   "authors": [
     "Shane Gadsby <schme16@gmail.com>"
   ],
   "description": "Angular binding for the tonen database service",
-  "main": "dist/tonen.min.js",
+  "main": [
+    "dist/tonen-angular.min.js",
+    "dist/tonen-jquery.min.js"
+  ],
   "moduleType": [],
   "keywords": [
     "angular",
